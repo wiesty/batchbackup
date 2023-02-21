@@ -10,3 +10,5 @@ Simple batch script for backing up stuff. (In my case used for my unraid appdata
 -   Finally, the script compresses the backup folder into a `.zip` file, deletes the original backup folder, and outputs a log message indicating that the backup is complete.
 
 Note: This script assumes that the `7z.exe` command-line tool is installed and added to the system PATH for compressing the backup folder into a `.zip` file. If it's not installed, you can download it from the 7-Zip website and add it to the system PATH manually.
+
+The reason for the temp folder is to prevent cloud errors. (If the backupDestination is OneDrive or Nextcloud, it would start to sync the folder before the .zip is made) 
