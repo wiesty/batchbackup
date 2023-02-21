@@ -23,8 +23,8 @@ set backupFolder=%backupFolder:_=-%
 mkdir "%tempbackup%\%backupFolder%"
 
 echo folder created. backup starting...
-REM ausgeschlossene Ordner kommen nach /np /xd mit ""
-robocopy "%backupSource%" "%tempbackup%%backupFolder%" /e /xo /r:0 /np /xd "%backupSource%\yt" "%backupSource%\magicmirror2" "%backupSource%\homematic" "%backupSource%\homematic-wiesty" "%backupSource%\magicmirror\modules" "%backupSource%\portainer-ce" "%backupSource%\NginxProxyManager\logs" "%backupSource%\NginxProxyManager\log" "%backupSource%\mysql"
+REM excluded folders after the /np /xd 
+robocopy "%backupSource%" "%tempbackup%%backupFolder%" /e /xo /r:0 /np /xd "%backupSource%\yt"
 echo Backup complete.
 echo.
 echo Zip the backup folder
