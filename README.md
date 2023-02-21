@@ -1,6 +1,7 @@
 # batchbackup
 Simple batch script for backing up stuff. (In my case used for my unraid appdata folder)
 
+![console output from the script.bat](https://i.imgur.com/5PAXPaL.png)
 
 -   The script first checks for an internet connection by pinging the Google DNS server (8.8.8.8) and waits until a connection is established.
 -   The script then defines a list of folders to exclude from the backup (specified after `/e /xo /r:0 /np /xd` ) and the backup source and destination folders (specified by the `backupSource` and `backupDestination` variables).
