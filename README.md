@@ -1,4 +1,4 @@
-# batchbackup
+# batchbackup <img src="http://unmaintained.tech/badge.svg"/>
 Simple batch script for backing up stuff. (In my case used for my unraid appdata folder)
 
 ![console output from the script.bat](https://i.imgur.com/5PAXPaL.png)
